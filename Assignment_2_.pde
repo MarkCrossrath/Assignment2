@@ -1,6 +1,5 @@
 //calling classes 
 import processing.sound.*;
-
 Track track;
 Car car;
 
@@ -26,7 +25,7 @@ void draw()
    
   track.drawtrack();
   
-  car.drawcar();
+  car.drawcar.Car();
  
 }
 

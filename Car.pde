@@ -1,11 +1,6 @@
-class Car extends GameObject
+class Car 
 {
-  float theta;
-  PVector velocity;
-  PVector accel;
- 
-      
-  char left,right;
+  
   PShape group;
 
 
@@ -56,37 +51,23 @@ Car() {
 }
 
 
-void drawcar() {
+/*void drawcar() {
    
-  //float xright  = 575;
-    // float xleft = 225;
-     //float ytop = 400;
-    // float ybottom = 600;
-    //float mposx = mouseX;
-   //  float mposy = mouseY;
- //if (mposx< xright && mposx > xleft && mposy > ytop && mposy < ybottom)
- //{
- // translate(mouseX, mouseY);
-// }
+  float xright  = 575;
+     float xleft = 225;
+     float ytop = 400;
+    float ybottom = 600;
+    float mposx = mouseX;
+    float mposy = mouseY;
+ if (mposx< xright && mposx > xleft && mposy > ytop && mposy < ybottom)
+ {
+  translate(mouseX, mouseY);
+}
  //else
 // {
    translate(400,500);
  //}
   shape(group);
-}
-void update()
-  {
-      PVector force;
-     float power = 100;
-    forward.x = sin(theta);
-    forward.y  = -cos(theta);
-    if (checkKey(left))
-    {
-      force.add(PVector.mult(forward, power));      
-    }
-    if (checkKey(right))
-    {
-      force.add(PVector.mult(forward, -power));      
-    }
-   
+}*/
+
 }
