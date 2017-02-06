@@ -1,4 +1,4 @@
-class Track
+class Track 
 {
    
   int border =50;
@@ -16,23 +16,25 @@ class Track
       rect(390,250,25,75);
       rect(390,375,25,75);
       rect(390,500,25,75);
-    //   float xright  = 800;
-    // float xleft = 0;
-    // float ytop = 0;
-    // float ybottom = 600;
-    //float mposx = mouseX;
-   //  float mposy = mouseY;
-  //fill(0);
+     float xright  = 800;
+     float xleft = 0;
+     float ytop = 0;
+     float ybottom = 600;
+     float mposx = mouseX;
+     float mposy = mouseY;
+     fill(0);
       text( "COORDINATES",620,250);
-   // if (mposx< xright && mposx > xleft && mposy > ytop && mposy < ybottom)
-   // {
+   if (mposx< xright && mposx > xleft && mposy > ytop && mposy < ybottom)
+    {
   
       text(mouseX +"," + mouseY,720,250);
-   // }
+    }
 
       
       
       
     }
 
+
+}
 }

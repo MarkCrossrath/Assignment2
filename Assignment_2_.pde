@@ -2,7 +2,7 @@
 import processing.sound.*;
 
 Track track;
-Car car; 
+Car car;
 
 SoundFile hornSound; 
 boolean horn;
