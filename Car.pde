@@ -67,7 +67,7 @@ void carPlace() {
  {
    translate(400,500);
  }
-  shape(Group);
+  shape(group);
 }
 
 }
