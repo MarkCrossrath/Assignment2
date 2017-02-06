@@ -25,7 +25,7 @@ void draw()
    
   track.drawtrack();
   
-  car.drawcar.Car();
+  car.carPlace();
  
 }
 

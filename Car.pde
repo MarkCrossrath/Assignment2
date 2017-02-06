@@ -4,7 +4,7 @@ class Car
   PShape group;
 
 
-Car() {
+void CarDraw () {
   // Make a group PShape
   group = createShape(GROUP);
   
@@ -51,7 +51,7 @@ Car() {
 }
 
 
-/*void drawcar() {
+void carPlace() {
    
   float xright  = 575;
      float xleft = 225;
@@ -63,11 +63,11 @@ Car() {
  {
   translate(mouseX, mouseY);
 }
- //else
-// {
+ else
+ {
    translate(400,500);
- //}
-  shape(group);
-}*/
+ }
+  shape(Group);
+}
 
 }
