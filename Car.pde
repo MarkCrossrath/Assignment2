@@ -4,7 +4,7 @@ class Car
   PShape group;
 
 
-void CarDraw () {
+ Car () {
   // Make a group PShape
   group = createShape(GROUP);
   
@@ -55,19 +55,29 @@ void carPlace() {
    
   float xright  = 575;
      float xleft = 225;
-     float ytop = 400;
-    float ybottom = 600;
+    
     float mposx = mouseX;
-    float mposy = mouseY;
- if (mposx< xright && mposx > xleft && mposy > ytop && mposy < ybottom)
+   
+ if (mposx< xright && mposx > xleft )
  {
-  translate(mouseX, mouseY);
+  if (keyPressed)
+  {
+ if (keyCode == LEFT)
+  {
+     group.translate(-10,0);
+  }
+    
 }
- else
+ if (keyPressed)
  {
-   translate(400,500);
+ if (keyCode == RIGHT)
+  {
+    
+  group.translate(10,0);
+  }
  }
   shape(group);
 }
 
+}
 }

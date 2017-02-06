@@ -2,6 +2,7 @@
 import processing.sound.*;
 Track track;
 Car car;
+AICar aicar;
 
 SoundFile hornSound; 
 boolean horn;
@@ -13,6 +14,7 @@ void setup()
   
   track = new Track();
   car = new Car();
+  aicar = new AICar();
    
    horn = true;
 
@@ -26,6 +28,7 @@ void draw()
   track.drawtrack();
   
   car.carPlace();
+  aicar. drawCar();
  
 }
 
