@@ -13,11 +13,11 @@ class Car
   // Make three shapes
   pos = new PVector(200, height/2);
   
-  float x = 0;
-  float y = 0;
+ // float x = 0;
+  //float y = 0;
   PShape window1 = createShape(RECT, 3,27,44, 10);
   window1.setFill(color(118,203,239));
-  PShape body = createShape(RECT, x, y, 50, 110,5);
+  PShape body = createShape(RECT, 0, 0, 50, 110,5);
   PShape strip = createShape(RECT, 12,0,10,110);
   strip.setFill(color(10,55,233));
   PShape strip1 = createShape(RECT, 28,0,10,110);
@@ -47,9 +47,7 @@ class Car
   roof2.vertex(0,70);
   roof2.vertex(50,70);
   roof2.endShape();
-  //body.setFill(color(255));
- // window1.setFill(color(118,203,239,10));
- // window2.setFill(color(118,203,239,10));
+ 
   
   
  

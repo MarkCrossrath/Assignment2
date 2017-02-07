@@ -12,6 +12,7 @@ int speed= 2;
 
 void carTraffic()
 {
+
     fill(255,0,0);
     for (int i=0; i<1; i++)
     {
