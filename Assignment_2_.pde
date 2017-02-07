@@ -4,6 +4,7 @@ PImage startScreen;
 ;
 Track track;
 Car car;
+Traffic traffic;
 
 
 SoundFile hornSound; 
@@ -23,8 +24,8 @@ void setup()
   
   track = new Track();
   car = new Car();
-
-   hornSound = new SoundFile(this, "horn.wav");
+  traffic = new Traffic();
+  hornSound = new SoundFile(this, "horn.wav");
    horn = true;
 
   
@@ -79,6 +80,7 @@ void draw()
   track.drawtrack();
   
   car.carPlace();
+  traffic.carTraffic();
 
    }
 }
