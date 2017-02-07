@@ -16,9 +16,17 @@ class Car
   float x = 0;
   float y = 0;
   PShape window1 = createShape(RECT, 3,27,44, 10);
+  window1.setFill(color(118,203,239));
   PShape body = createShape(RECT, x, y, 50, 110,5);
-  body.setFill(color(37, 142, 42));
+  PShape strip = createShape(RECT, 12,0,10,110);
+  strip.setFill(color(10,55,233));
+  PShape strip1 = createShape(RECT, 28,0,10,110);
+  strip1.setFill(color(10,55,233));
+  
+  body.setFill(color(225));
   PShape window2 = createShape(RECT,3,75,44,10);
+  window2.setFill(color(118,203,239));
+  
   PShape bonnet = createShape();
   bonnet.beginShape();
   bonnet.vertex(0, 23);
@@ -39,13 +47,17 @@ class Car
   roof2.vertex(0,70);
   roof2.vertex(50,70);
   roof2.endShape();
-  body.setFill(color(37, 142, 42));
+  //body.setFill(color(255));
+ // window1.setFill(color(118,203,239,10));
+ // window2.setFill(color(118,203,239,10));
   
   
  
   
   // Add all children
   group.addChild(body);
+  group.addChild(strip);
+  group.addChild(strip1);
   group.addChild(window1);
   group.addChild(window2);
   group.addChild(bonnet);
