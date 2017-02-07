@@ -26,7 +26,7 @@ void setup()
   aicar = new AICar();
    hornSound = new SoundFile(this, "horn.wav");
    horn = true;
-PFont f = createFont("Q.vlw",25);
+
   
   
 } 
