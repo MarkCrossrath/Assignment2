@@ -3,8 +3,7 @@ class AICar
   
   
 
-float x = 200;
-  float y = 50; 
+
   float speed= 2;
   
   void drawCar()
@@ -17,12 +16,6 @@ float x = 200;
   {
     
 
-    if (frameCount % 70 == 0)
-    {
-      
-    x= int( random(0,width-200));
-    
-  x+=200;
     
     
     }//end if
@@ -30,8 +23,10 @@ float x = 200;
     
     void display()
    {
+     float x = 200;
+  float y = 50; 
       fill(255);
       ellipse(x,y,50,50);
    }
-}
+
   

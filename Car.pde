@@ -3,6 +3,7 @@ class Car
   
   PShape group;
   PVector pos;
+ 
 
 
  Car () {
@@ -10,10 +11,12 @@ class Car
   group = createShape(GROUP);
   
   // Make three shapes
-  pos = new PVector(width/2, height/2);
-
+  pos = new PVector(200, height/2);
+  
+  float x = 0;
+  float y = 0;
   PShape window1 = createShape(RECT, 3,27,44, 10);
-  PShape body = createShape(RECT, 0, 0, 50, 110,5);
+  PShape body = createShape(RECT, x, y, 50, 110,5);
   body.setFill(color(37, 142, 42));
   PShape window2 = createShape(RECT,3,75,44,10);
   PShape bonnet = createShape();
@@ -77,11 +80,11 @@ void carPlace() {
 
   if(pos.x < 210)
   {
-    pos.x++;
+    pos.x+=10;
   }
-  if(pos.x > 590)
+  if(pos.x > 540)
   {
-    pos.x--;
+    pos.x-=10;
   }
   
   
