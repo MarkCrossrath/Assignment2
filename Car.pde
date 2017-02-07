@@ -2,16 +2,18 @@ class Car
 {
   
   PShape group;
-
+  
+float x = 378;
+ float y = 373;
 
  Car () {
   // Make a group PShape
   group = createShape(GROUP);
   
   // Make three shapes
- 
- 
-  PShape window1 = createShape(RECT, 378,373,44, 10);
+
+
+  PShape window1 = createShape(RECT, x,y,44, 10);
   PShape body = createShape(RECT, 375, 350, 50, 110,5);
   body.setFill(color(37, 142, 42));
   PShape window2 = createShape(RECT,378,427,44,10);
@@ -73,6 +75,12 @@ void carPlace() {
     
   group.translate(10,0);
   }
+  if (x == 207&& y==275)
+  {
+    group.translate(10,0);
+  }
+  
+  
   
  }
  

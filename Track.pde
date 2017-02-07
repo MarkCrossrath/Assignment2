@@ -16,6 +16,7 @@ class Track
       rect(390,375,25,75);
       rect(390,500,25,75);
     
+      text(mouseX +"," + mouseY,720,250);
       
       
     }
