@@ -2,40 +2,39 @@ class Car
 {
   
   PShape group;
-  
-float x = 378;
- float y = 373;
+  PVector pos;
+
 
  Car () {
   // Make a group PShape
   group = createShape(GROUP);
   
   // Make three shapes
+  pos = new PVector(width/2, height/2);
 
-
-  PShape window1 = createShape(RECT, x,y,44, 10);
-  PShape body = createShape(RECT, 375, 350, 50, 110,5);
+  PShape window1 = createShape(RECT, 3,27,44, 10);
+  PShape body = createShape(RECT, 0, 0, 50, 110,5);
   body.setFill(color(37, 142, 42));
-  PShape window2 = createShape(RECT,378,427,44,10);
+  PShape window2 = createShape(RECT,3,75,44,10);
   PShape bonnet = createShape();
   bonnet.beginShape();
-  bonnet.vertex(375, -30);
-  bonnet.vertex(425, -30);
+  bonnet.vertex(0, 23);
+  bonnet.vertex(50, 23);
   bonnet.endShape();
   PShape boot = createShape();
   boot.beginShape();
-  boot.vertex(375,440);
-  boot.vertex(425,440);
+  boot.vertex(0,90);
+  boot.vertex(50,90);
   boot.endShape();
   PShape roof1 = createShape();
   roof1.beginShape();
-  roof1.vertex(375,387);
-  roof1.vertex(425,387);
+  roof1.vertex(0,40);
+  roof1.vertex(50,40);
   roof1.endShape();
   PShape roof2 = createShape();
   roof2.beginShape();
-  roof2.vertex(375,422);
-  roof2.vertex(425,422);
+  roof2.vertex(0,70);
+  roof2.vertex(50,70);
   roof2.endShape();
   body.setFill(color(37, 142, 42));
   
@@ -63,8 +62,8 @@ void carPlace() {
   {
  if (keyCode == LEFT)
   {
-     group.translate(-10,0);
-     
+
+     pos.x -= 10;
   }
     
 }
@@ -73,18 +72,23 @@ void carPlace() {
  if (keyCode == RIGHT)
   {
     
-  group.translate(10,0);
+  pos.x += 10;
   }
-  if (x == 207&& y==275)
+
+  if(pos.x < 210)
   {
-    group.translate(10,0);
+    pos.x++;
+  }
+  if(pos.x > 590)
+  {
+    pos.x--;
   }
   
   
   
  }
- 
-  shape(group);
+ translate(pos.x, pos.y);
+  shape(group, 0, 0);
 
 
 }
