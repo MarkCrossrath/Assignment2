@@ -5,7 +5,7 @@ PImage startScreen;
 Track track;
 Car car;
 Traffic traffic;
-
+float  X = random(200,400);
 
 SoundFile hornSound; 
 boolean horn;
