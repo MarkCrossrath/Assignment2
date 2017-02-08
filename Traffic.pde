@@ -25,7 +25,7 @@ car1 = loadImage("car1.png");
     {
       carY[i]= carY[i] + speed;
       image(car1,x, carY[i]+=10,100,100);  
-        if(/* x-25 > mouseX && x-24< mouseX  && */carY[i] > 400)
+        if( x > mouseX-75 && x< mouseX+75  && carY[i] > 400-100 )
     {
       stage = 4;
     }
