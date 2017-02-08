@@ -88,11 +88,11 @@ void carPlace() {
   pos.x += 10;
   }
 
-  if(pos.x < 100)
+  if(pos.x < 10)
   {
     pos.x+=10;
   }
-  if(pos.x > 400)
+  if(pos.x > 340)
   {
     pos.x-=10;
   }

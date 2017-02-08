@@ -78,9 +78,9 @@ void draw()
    if (stage==3){
      
   track.drawtrack();
-  
+   traffic.carTraffic();
   car.carPlace();
-  traffic.carTraffic();
+  
 
    }
 }
