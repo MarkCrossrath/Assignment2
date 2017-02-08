@@ -11,6 +11,6 @@ Controls
 
 The controls are basic. The controls are using the left and right keys to move the car. The object of the game is to dodge the objects for as long as you can. 
 
-[![Video](http://img.youtube.com/vi/oZr6SZt0qFU0/0.jpg)](http://www.youtube.com/watch?v=oZr6SZt0qFU)
+[![Video](http://img.youtube.com/vi/oZr6SZt0qFU0.jpg)]http://www.youtube.com/watch?v=oZr6SZt0qFU)
 
 
