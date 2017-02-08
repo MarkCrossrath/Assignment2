@@ -15,7 +15,9 @@ int speed= 2;
 void carTraffic()
 {
 //float  X = 400;
+
 posT = new PVector(random(0,500),0);
+
     fill(255,0,0);
     for (int i=0; i<1; i++)
     {
