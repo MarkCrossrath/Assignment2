@@ -4,48 +4,48 @@ class Car
   PShape group;
   PVector pos;
  
-
+float  X = 200;
 
  Car () {
   // Make a group PShape
   group = createShape(GROUP);
   
   // Make three shapes
-  pos = new PVector(100, height/2);
+  pos = new PVector(100, 400);
   
- // float x = 0;
+  //float x = 0;
   //float y = 0;
-  PShape window1 = createShape(RECT, pos.x+3,27,44, 10);
+  PShape window1 = createShape(RECT, X+3,27,44, 10);
   window1.setFill(color(118,203,239));
-  PShape body = createShape(RECT, pos.x, 0, 50, 110,5);
-  PShape strip = createShape(RECT, pos.x+12,0,10,110);
+  PShape body = createShape(RECT, X, 0, 50, 110,5);
+  PShape strip = createShape(RECT, X+12,0,10,110);
   strip.setFill(color(10,55,233));
-  PShape strip1 = createShape(RECT,pos.x+28,0,10,110);
+  PShape strip1 = createShape(RECT,X+28,0,10,110);
   strip1.setFill(color(10,55,233));
   
   body.setFill(color(225));
-  PShape window2 = createShape(RECT,pos.x+3,75,44,10);
+  PShape window2 = createShape(RECT,X+3,75,44,10);
   window2.setFill(color(118,203,239));
   
   PShape bonnet = createShape();
   bonnet.beginShape();
-  bonnet.vertex(pos.x, 23);
-  bonnet.vertex(pos.x+50, 23);
+  bonnet.vertex(X, 23);
+  bonnet.vertex(X+50, 23);
   bonnet.endShape();
   PShape boot = createShape();
   boot.beginShape();
-  boot.vertex(pos.x,90);
-  boot.vertex(pos.x+50,90);
+  boot.vertex(X,90);
+  boot.vertex(X+50,90);
   boot.endShape();
   PShape roof1 = createShape();
   roof1.beginShape();
-  roof1.vertex(pos.x,40);
-  roof1.vertex(pos.x+50,40);
+  roof1.vertex(X,40);
+  roof1.vertex(X+50,40);
   roof1.endShape();
   PShape roof2 = createShape();
   roof2.beginShape();
-  roof2.vertex(pos.x,70);
-  roof2.vertex(pos.x+50,70);
+  roof2.vertex(X,70);
+  roof2.vertex(X+50,70);
   roof2.endShape();
  
   

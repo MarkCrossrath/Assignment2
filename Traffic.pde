@@ -21,7 +21,7 @@ posT = new PVector(random(0,500),0);
     {
       carY[i]= carY[i] + speed;
       rect(posT.x, carY[i]++, 50, 100);  
-      if(carY[i] > 200)
+      if(carY[i] > 600)
       {
          //x = random(0, 300);
           carY[i] = -200;
