@@ -1,7 +1,9 @@
 //calling classes 
 import processing.sound.*;
 PImage startScreen;
-;
+PImage car1;
+PImage ex;
+
 Track track;
 Car car;
 Traffic traffic;
@@ -10,6 +12,8 @@ Traffic traffic;
 SoundFile hornSound; 
 boolean horn;
 int stage;
+
+
 
   
 void setup()
@@ -51,6 +55,8 @@ void draw()
    
    if(stage==2)
    {
+      startScreen = loadImage("hqdefault.jpg");
+      image(startScreen,0,0,800,600);
      textAlign(CENTER);
      textSize(25);
    text("Please pick the right one for action", 400,400);
@@ -80,9 +86,11 @@ void draw()
   track.drawtrack();
    traffic.carTraffic();
   car.carPlace();
+ 
   
 
    }
+   
 }
 
 void mousePressed()

@@ -4,7 +4,7 @@ class Car
   PShape group;
   PVector pos;
  
-float  X = 200;
+float  X = -25;
 
  Car () {
   // Make a group PShape
@@ -12,7 +12,7 @@ float  X = 200;
   
   // Make three shapes
   pos = new PVector(100, 400);
-  
+  //mouseX = 600;
   //float x = 0;
   //float y = 0;
   PShape window1 = createShape(RECT, X+3,27,44, 10);
@@ -88,11 +88,11 @@ void carPlace() {
   pos.x += 10;
   }
 
-  if(pos.x < 10)
+  if(mouseX < 10)
   {
     pos.x+=10;
   }
-  if(pos.x > 340)
+  if(mouseX > 340)
   {
     pos.x-=10;
   }
@@ -100,7 +100,7 @@ void carPlace() {
   
   
  }
- translate(pos.x, pos.y);
+ translate(mouseX, pos.y);
   shape(group, 0, 0);
 
 
