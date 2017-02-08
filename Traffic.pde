@@ -20,7 +20,7 @@ pos = new PVector(100, 400);
 
 car1 = loadImage("car1.png");
 
-    fill(255,0,0);
+   
     for (int i=0; i<1; i++)
     {
       carY[i]= carY[i] + speed;
@@ -41,9 +41,22 @@ car1 = loadImage("car1.png");
      int i = 0; 
      
       ex = loadImage("explosion.png");
+      fill(255);
+       
      image(ex,x, carY[i]+=10,100,100);
-     stage =2;
-    }
+      
+     text("GAME OVER", 300,300);
+    
+    // delay(500);
+     stage = 2 ;
+     
+     //delay(550);
+     
+   }
+   
+     
+    
+   
    
 }
   

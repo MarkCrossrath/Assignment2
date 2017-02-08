@@ -55,6 +55,7 @@ void draw()
    
    if(stage==2)
    {
+     
       startScreen = loadImage("hqdefault.jpg");
       image(startScreen,0,0,800,600);
      textAlign(CENTER);
@@ -79,6 +80,7 @@ void draw()
      }
      
    }
+   delay(500);
    }
    
    if (stage==3){
